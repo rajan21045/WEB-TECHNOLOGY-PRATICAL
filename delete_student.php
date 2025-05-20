@@ -5,7 +5,8 @@ $password = "*rajan12345#";
 $dbname = "college";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
+
+ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
@@ -15,7 +16,9 @@ $sql = "DELETE FROM students WHERE roll='$roll'";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record deleted successfully!";
-} else {
+} 
+
+else {
     echo "Error: " . $conn->error;
 }
 
