@@ -20,7 +20,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "<tr><td>{$row['name']}</td><td>{$row['email']}</td><td>{$row['roll']}</td></tr>";
     }
-} else {
+} 
+
+else {
     echo "<tr><td colspan='3'>No records found</td></tr>";
 }
 echo "</table>";
