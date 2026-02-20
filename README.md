@@ -60,3 +60,19 @@ WEB-TECHNOLOGY-PRATICAL/
 │   ├── Assignment-2/  
 │   └── ...
 └── README.md
+
+## 🎯 Learning Outcomes
+
+Through this practical work you’ll demonstrate ability to:
+- Build web pages using HTML & CSS
+- Add interactivity with JavaScript
+- Handle form data and server logic with PHP
+- Understand web standards and UI best practices
+
+## 💬 Feedback & Contributions
+
+This repository is mainly for academic practice — but feel free to open an issue if you want to improve structure or add explanations.
+
+```bash
+Happy Coding! 😊
+```
