@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Example</title>
+</head>
+<body>
+
+    <h2>JavaScript Cookie Demo</h2>
+
+    <button onclick="createCookie()">Create Cookie</button>
+    <button onclick="readCookie()">Read Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+
+    <p id="output"></p>
+
+<script>
+
+// Create Cookie
+function createCookie() {
+    let name = "username";
+    let value = "Rajan";
+    let days = 7;
+
+    let date = new Date();
+    date.setTime(date.getTime() + (days*24*60*60*1000));
+    let expires = "expires=" + date.toUTCString();
+
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+
+    alert("Cookie Created Successfully!");
+}
+
+
+// 2️ Read Cookie
+function readCookie() {
+    let cookieData = document.cookie;
+    document.getElementById("output").innerHTML = 
+        "Stored Cookies: " + cookieData;
+}
+
+
+// 3️ Delete Cookie
+function deleteCookie() {
+    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    alert("Cookie Deleted Successfully!");
+}
+
+</script>
+
+</body>
+</html>

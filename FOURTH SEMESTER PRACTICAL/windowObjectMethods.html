@@ -1,0 +1,53 @@
+<!-- Write javascript code to demonstrate the window object methods (like alert(),prompt(),confirm(),open(),close(),focus() and blur()). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Methods</title>
+</head>
+
+<body>
+    <script>
+        // 1. alert()
+        alert("Welcome to the Window Object Methods Demo!");
+
+        // 2. prompt()
+        let name = prompt("Please enter your name:");
+        if (name) {
+            alert("Hello, " + name + "!");
+        } else {
+            alert("You didn't enter your name.");
+        }
+
+        // 3. confirm()
+        let isConfirmed = confirm("Do you want to proceed?");
+        if (isConfirmed) {
+            alert("You chose to proceed.");
+        } else {
+            alert("You chose not to proceed.");
+        }
+
+        // 4. open() and close()
+        let newWindow = window.open("", "New Window", "width=400,height=300");
+        newWindow.document.write("<h1>This is a new window</h1>");
+
+        // Close the new window after 5 seconds
+        setTimeout(() => {
+            newWindow.close();
+        }, 5000);
+
+        // 5. focus() and blur()
+        setTimeout(() => {
+            newWindow.focus();
+            alert("The new window is now focused.");
+            setTimeout(() => {
+                newWindow.blur();
+                alert("The new window is now blurred.");
+            }, 2000);
+        }, 2000);
+    </script>
+</body>
+
+</html>

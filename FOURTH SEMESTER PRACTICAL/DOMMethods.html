@@ -1,0 +1,75 @@
+<!-- Write javascript to to demonstrate the use of DOM methods. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Methods Demo</title>
+</head>
+
+<body>
+
+    <h1 id="title">DOM Methods Example</h1>
+
+    <p class="text">This is paragraph 1</p>
+    <p class="text">This is paragraph 2</p>
+
+    <button onclick="changeContent()">Change Content</button>
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <div id="container"></div>
+
+    <script>
+
+        function changeContent() {
+
+            // getElementById
+            document.getElementById("title").innerHTML = "Title Changed!";
+
+            // getElementsByClassName
+            let paragraphs = document.getElementsByClassName("text");
+            paragraphs[0].style.color = "red";
+
+            // getElementsByTagName
+            let allPara = document.getElementsByTagName("p");
+            allPara[1].style.fontWeight = "bold";
+
+            // querySelector
+            document.querySelector(".text").style.backgroundColor = "yellow";
+
+            // querySelectorAll
+            let allText = document.querySelectorAll(".text");
+            allText.forEach(function (element) {
+                element.style.fontSize = "20px";
+            });
+        }
+
+        function addElement() {
+
+            // createElement
+            let newElement = document.createElement("p");
+
+            // setAttribute
+            newElement.setAttribute("class", "newPara");
+
+            newElement.innerHTML = "New Paragraph Added!";
+
+            // appendChild
+            document.getElementById("container").appendChild(newElement);
+        }
+
+        function removeElement() {
+
+            let container = document.getElementById("container");
+            let child = container.lastChild;
+
+            if (child) {
+                container.removeChild(child);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
