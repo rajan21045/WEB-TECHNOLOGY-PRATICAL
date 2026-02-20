@@ -1,0 +1,47 @@
+<!-- Write  javascript code to demonstrate the array declarations and also demonstrate the use of array methods like push,pop,shift,unshift,slice,splice,concat,join,indexof,tostring,sort,reverse and foreach methods. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        const cars = [
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+
+        let size = cars.length;
+        document.write("Size of the array:", size);
+        let myList = cars.toString();
+        document.write("<br>Array as string:", myList);
+        let fruit = cars.at(2);
+        document.write("<br>Third element:", fruit);
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.join(" * ");
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits2.pop();
+        document.getElementById("demo2").innerHTML = fruits2;
+        fruits.push("Kiwi");
+        document.write("<br>After push:", fruits);
+        fruits.shift();
+        document.write("<br>After shift:", fruits);
+        fruits.unshift("Lemon");
+        document.write("<br>After unshift:", fruits);
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const myChildren = myGirls.concat(myBoys);
+        document.write("<br>Concatenated array:", myChildren);
+        fruits.copyWithin(2, 0, 2);
+        document.write("<br>After copyWithin:", fruits);
+    </script>
+</body>
+
+</html>

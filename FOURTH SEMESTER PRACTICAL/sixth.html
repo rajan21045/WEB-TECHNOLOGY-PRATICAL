@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript String Functions Demo</title>
+</head>
+<body>
+
+<h2>JavaScript String Functions Demonstration</h2>
+
+<p id="output"></p>
+
+<script>
+let str = "Hello JavaScript World";
+let result = "";
+
+// 1. length
+result += "1. Length: " + str.length + "<br><br>";
+
+// 2. toUpperCase()
+result += "2. Uppercase: " + str.toUpperCase() + "<br><br>";
+
+// 3. toLowerCase()
+result += "3. Lowercase: " + str.toLowerCase() + "<br><br>";
+
+// 4. charAt()
+result += "4. Character at index 6: " + str.charAt(6) + "<br><br>";
+
+// 5. indexOf()
+result += "5. Index of 'JavaScript': " + str.indexOf("JavaScript") + "<br><br>";
+
+// 6. includes()
+result += "6. Includes 'World': " + str.includes("World") + "<br><br>";
+
+// 7. slice()
+result += "7. Slice (0 to 5): " + str.slice(0, 5) + "<br><br>";
+
+// 8. substring()
+result += "8. Substring (6 to 16): " + str.substring(6, 16) + "<br><br>";
+
+// 9. replace()
+result += "9. Replace 'World' with 'Universe': " + str.replace("World", "Universe") + "<br><br>";
+
+// 10. split()
+let words = str.split(" ");
+result += "10. Split into words: " + words.join(", ") + "<br><br>";
+
+// Display result
+document.getElementById("output").innerHTML = result;
+
+</script>
+
+</body>
+</html>

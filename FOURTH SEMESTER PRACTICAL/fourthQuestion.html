@@ -1,0 +1,53 @@
+<!-- Write javascript code to display the day of the week using date methods and switch case statement. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="dayNumber">
+    <button onclick="displayDay()">Display Day</button>
+    <p id="output"></p>
+
+    <script>
+        function displayDay() {
+            const dayNumber = document.getElementById("dayNumber").value;
+
+
+            switch (parseInt(dayNumber)) {
+                case 1:
+                    dayName = "Sunday";
+                    break;
+                case 2:
+                    dayName = "Monday";
+                    break;
+                case 3:
+                    dayName = "Tuesday";
+                    break;
+                case 4:
+                    dayName = "Wednesday";
+                    break;
+                case 5:
+                    dayName = "Thursday";
+                    break;
+                case 6:
+                    dayName = "Friday";
+                    break;
+                case 7:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    document.getElementById("output").innerHTML = "Invalid input. Please enter a number between 1 and 7.";
+                    return;
+            }
+
+            document.getElementById("output").innerHTML = `The corresponding day is: ${dayName}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!-- Write javascript code to demonstrate how events are handled in javascript. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="showMessage()">Click Me</button>
+    <h1>JavaScript Events</h1>
+    <h2>The mouseover and mousout Events</h2>
+
+    <div id="box" style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+        Move mouse over this box!
+    </div>
+    <script>
+        function showMessage() {
+            alert("Button Clicked!");
+        }
+        const box = document.getElementById("box");
+
+        // Let box listen for mouseover
+        box.addEventListener("mouseover", function () {
+            box.innerHTML = "Mouse is over me!";
+        });
+
+        // Let box listen for mouseout
+        box.addEventListener("mouseout", function () {
+            box.innerHTML = "Mouse is out!";
+        });
+    </script>
+</body>
+
+</html>
