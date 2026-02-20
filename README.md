@@ -44,3 +44,19 @@ This practical work uses core web technologies:
 - Run them on a local server like XAMPP / WAMP / MAMP
 - Place the files inside htdocs (or equivalent)
 - Access via http://localhost/<foldername>
+
+## 📁 Repository Structure
+WEB-TECHNOLOGY-PRATICAL/
+
+├── THIRD SEMESTER PRACTICAL/
+
+│   ├── Assignment-1/  
+│   ├── Assignment-2/  
+│   └── ...
+
+├── FOURTH SEMESTER PRACTICAL/
+
+│   ├── Assignment-1/  
+│   ├── Assignment-2/  
+│   └── ...
+└── README.md
