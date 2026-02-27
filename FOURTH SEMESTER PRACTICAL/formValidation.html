@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Username">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter Email">
+        <br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function validate() {
+            let username = document.getElementById("username").value;
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters long");
+                return false;
+            }
+            let usernamePattern = /^[a-zA-Z0-9]+$/;
+            if (!username.match(usernamePattern)) {
+                alert("Username can only contain letters and numbers");
+                return false;
+            }
+
+            let email = document.getElementById("email").value;
+            let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(pattern)) {
+                alert("Invalid Email");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
