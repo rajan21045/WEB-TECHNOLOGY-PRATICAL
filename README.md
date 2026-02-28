@@ -4,7 +4,7 @@ A collection of practical assignments and lab work completed for the Web Technol
 
 ## 📘 Overview
 
-This repository contains practical assignments and labs for the **Web Technology** subject. Each folder includes the **code**, **handouts**, **write-ups**, and **output files** you completed for practical sessions. The work covers essential web development topics such as **HTML**, **CSS**, **JavaScript**, and server-side scripting.
+This repository contains practical assignments and labs for the **Web Technology** subject. Each folder includes the **code** you completed for practical sessions. The work covers essential web development topics such as **HTML**, **CSS**, **JavaScript**, and server-side scripting.
 
 ## 🧠 What’s Included
 
