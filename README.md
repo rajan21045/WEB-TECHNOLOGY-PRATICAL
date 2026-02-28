@@ -15,12 +15,7 @@ The repository is organized by **semester and assignment**. Each section include
 📂 FOURTH SEMESTER PRACTICAL
 
 
-Inside each directory you’ll find folders/files for different assignments (e.g., `Assignment-1`, `Assignment-2`, etc.). These typically contain:  
-✔ Handout (problem description)  
-✔ Code (HTML/CSS/JS/PHP)  
-✔ Output screenshots or results  
-✔ Write-ups explaining the solutions
-
+Inside each directory you’ll find folders/files for different assignments (e.g., `Assignment-1`, `Assignment-2`, etc.). 
 ## 🛠 Technologies Used
 
 This practical work uses core web technologies:
