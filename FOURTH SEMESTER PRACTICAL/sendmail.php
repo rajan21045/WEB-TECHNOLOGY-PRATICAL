@@ -12,14 +12,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'rajanpoudel495@gmail.com';      
-    $mail->Password   = 'Rajan@123'; 
+    $mail->Username   = 'example123@gmail.com';      
+    $mail->Password   = 'HelloDon'tUseIt@123&'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('rajanpoudel495@gmail.com', 'Rajan Poudel');
-    $mail->addAddress('raajan.works@gmail.com', 'Raajan Works');
-    $mail->addReplyTo('rajanpoudel495@gmail.com', 'Rajan Poudel');
+    $mail->setFrom('example123@gmail.com', 'Rajan Poudel');
+    $mail->addAddress('example456@gmail.com', 'Raajan Works');
+    $mail->addReplyTo('example123@gmail.com', 'Rajan Poudel');
 
     $mail->isHTML(true);
     $mail->Subject = 'Test Email from PHPMailer';
